@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ShuyiApp" representedClassName="ShuyiApp" syncable="YES" codeGenerationType="class">
+        <attribute name="build" attributeType="String" defaultValueString=""/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="602596200" usesScalarValueType="NO"/>
+        <attribute name="version" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="ShuyiArea" representedClassName="ShuyiArea" syncable="YES" codeGenerationType="class">
+        <attribute name="id_area" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ShuyiCupHistory" representedClassName="ShuyiCupHistory" syncable="YES">
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="602580600" usesScalarValueType="NO"/>
+        <attribute name="morning" attributeType="String" defaultValueString=""/>
+        <attribute name="night" attributeType="String" defaultValueString=""/>
+    </entity>
+    <entity name="ShuyiItemLocation" representedClassName="ShuyiItemLocation" syncable="YES" codeGenerationType="class">
+        <attribute name="id_area" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id_item" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ShuyiSupplyItem" representedClassName="ShuyiSupplyItem" syncable="YES" codeGenerationType="class">
+        <attribute name="id_area" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id_item" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ShuyiSupplyRecord" representedClassName="ShuyiSupplyRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="602326800" usesScalarValueType="NO"/>
+        <attribute name="lab" optional="YES" attributeType="String"/>
+        <attribute name="vis" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ShuyiArea" positionX="-270.1015625" positionY="34.9140625" width="128" height="73"/>
+        <element name="ShuyiApp" positionX="-225" positionY="144" width="128" height="88"/>
+        <element name="ShuyiCupHistory" positionX="-216" positionY="153" width="128" height="88"/>
+        <element name="ShuyiItemLocation" positionX="-223.07421875" positionY="289.6953125" width="128" height="73"/>
+        <element name="ShuyiSupplyItem" positionX="-401.16015625" positionY="290.703125" width="128" height="103"/>
+        <element name="ShuyiSupplyRecord" positionX="-54" positionY="-9" width="128" height="88"/>
+    </elements>
 </model>

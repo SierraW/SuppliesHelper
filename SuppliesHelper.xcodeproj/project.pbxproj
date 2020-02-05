@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7E30FB23E7AC4C00738A62 /* DetailOutputTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E30FA23E7AC4C00738A62 /* DetailOutputTableViewController.swift */; };
+		3B7E30FF23E7CA7F00738A62 /* DetailModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E30FE23E7CA7F00738A62 /* DetailModifyViewController.swift */; };
+		3B7E310323E7EA6400738A62 /* AreaEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E310223E7EA6400738A62 /* AreaEditViewController.swift */; };
+		3B7E310523E8306200738A62 /* LoadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E310423E8306200738A62 /* LoadDataViewController.swift */; };
+		3B7E310F23EA5FAE00738A62 /* CupCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E310E23EA5FAE00738A62 /* CupCountViewController.swift */; };
+		3B7E311323EA8C8500738A62 /* DaoCupCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311223EA8C8500738A62 /* DaoCupCount.swift */; };
+		3B7E311A23EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */; };
+		3B7E311B23EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */; };
+		3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */; };
 		3BF6102223DF163300572621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102123DF163300572621 /* AppDelegate.swift */; };
 		3BF6102423DF163300572621 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102323DF163300572621 /* SceneDelegate.swift */; };
 		3BF6102623DF163300572621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102523DF163300572621 /* ViewController.swift */; };
@@ -14,10 +23,41 @@
 		3BF6102C23DF163300572621 /* SuppliesHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102A23DF163300572621 /* SuppliesHelper.xcdatamodeld */; };
 		3BF6102E23DF163400572621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6102D23DF163400572621 /* Assets.xcassets */; };
 		3BF6103123DF163400572621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6102F23DF163400572621 /* LaunchScreen.storyboard */; };
+		3BF6104223DFD69100572621 /* AreaDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6104123DFD69100572621 /* AreaDataTableViewController.swift */; };
+		3BF6104823E02FEB00572621 /* EditItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6104723E02FEB00572621 /* EditItemViewController.swift */; };
+		3BF6104A23E0324800572621 /* DaoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6104923E0324800572621 /* DaoItem.swift */; };
+		3BF6104C23E034B600572621 /* ItemDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6104B23E034B600572621 /* ItemDataTableViewController.swift */; };
+		3BF6104E23E043BD00572621 /* DaoArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6104D23E043BD00572621 /* DaoArea.swift */; };
+		3BF6105023E1607800572621 /* EditItemPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6104F23E1607800572621 /* EditItemPickerView.swift */; };
+		3BF6105323E18F5600572621 /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6105223E18F5600572621 /* DefaultData.swift */; };
+		3BF6105523E298B100572621 /* DaoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6105423E298B100572621 /* DaoLocation.swift */; };
+		3BF6105723E2BBF100572621 /* ReadableLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6105623E2BBF100572621 /* ReadableLocation.swift */; };
+		3BF6105A23E59DF300572621 /* LocationSelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6105923E59DF300572621 /* LocationSelectionSet.swift */; };
+		3BF6105D23E6763D00572621 /* LocationSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6105C23E6763D00572621 /* LocationSelectionTableViewController.swift */; };
+		3BF6105F23E6793400572621 /* LocationEditionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6105E23E6793400572621 /* LocationEditionTableViewController.swift */; };
+		3BF6106223E69A4800572621 /* DevelopmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106123E69A4800572621 /* DevelopmentViewController.swift */; };
+		3BF6106523E6A1EF00572621 /* RecordLocationSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106423E6A1EF00572621 /* RecordLocationSelectionTableViewController.swift */; };
+		3BF6106723E6A2A800572621 /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106623E6A2A800572621 /* RecordController.swift */; };
+		3BF6106923E6A3BE00572621 /* DaoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106823E6A3BE00572621 /* DaoRecord.swift */; };
+		3BF6106B23E6A5F400572621 /* VisitedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106A23E6A5F400572621 /* VisitedItem.swift */; };
+		3BF6106D23E6B4C900572621 /* VisitedItemSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106C23E6B4C900572621 /* VisitedItemSet.swift */; };
+		3BF6106F23E6BDF900572621 /* RecordNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6106E23E6BDF900572621 /* RecordNaviViewController.swift */; };
+		3BF6107123E6C46800572621 /* PreviousRecordsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6107023E6C46800572621 /* PreviousRecordsTableViewController.swift */; };
+		3BF6107423E6D18300572621 /* DetailLocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6107323E6D18300572621 /* DetailLocationTableViewController.swift */; };
+		3BF6107823E71BF100572621 /* DetailFinderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6107723E71BF100572621 /* DetailFinderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3BF6101E23DF163300572621 /* SuppliesHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuppliesHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7E30FA23E7AC4C00738A62 /* DetailOutputTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOutputTableViewController.swift; sourceTree = "<group>"; };
+		3B7E30FE23E7CA7F00738A62 /* DetailModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModifyViewController.swift; sourceTree = "<group>"; };
+		3B7E310223E7EA6400738A62 /* AreaEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaEditViewController.swift; sourceTree = "<group>"; };
+		3B7E310423E8306200738A62 /* LoadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataViewController.swift; sourceTree = "<group>"; };
+		3B7E310E23EA5FAE00738A62 /* CupCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupCountViewController.swift; sourceTree = "<group>"; };
+		3B7E311223EA8C8500738A62 /* DaoCupCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoCupCount.swift; sourceTree = "<group>"; };
+		3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShuyiCupHistory+CoreDataClass.swift"; path = "SuppliesHelper/DataManage/DataModel/ShuyiCupHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShuyiCupHistory+CoreDataProperties.swift"; path = "SuppliesHelper/DataManage/DataModel/ShuyiCupHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoShuyiApp.swift; sourceTree = "<group>"; };
+		3BF6101E23DF163300572621 /* Supplies Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Supplies Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF6102123DF163300572621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF6102323DF163300572621 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BF6102523DF163300572621 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +66,28 @@
 		3BF6102D23DF163400572621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF6103023DF163400572621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF6103223DF163400572621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF6104123DFD69100572621 /* AreaDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataTableViewController.swift; sourceTree = "<group>"; };
+		3BF6104723E02FEB00572621 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditItemViewController.swift; path = DataManage/EditItemViewController.swift; sourceTree = "<group>"; };
+		3BF6104923E0324800572621 /* DaoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoItem.swift; sourceTree = "<group>"; };
+		3BF6104B23E034B600572621 /* ItemDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataTableViewController.swift; sourceTree = "<group>"; };
+		3BF6104D23E043BD00572621 /* DaoArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoArea.swift; sourceTree = "<group>"; };
+		3BF6104F23E1607800572621 /* EditItemPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemPickerView.swift; sourceTree = "<group>"; };
+		3BF6105223E18F5600572621 /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
+		3BF6105423E298B100572621 /* DaoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoLocation.swift; sourceTree = "<group>"; };
+		3BF6105623E2BBF100572621 /* ReadableLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableLocation.swift; sourceTree = "<group>"; };
+		3BF6105923E59DF300572621 /* LocationSelectionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionSet.swift; sourceTree = "<group>"; };
+		3BF6105C23E6763D00572621 /* LocationSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionTableViewController.swift; sourceTree = "<group>"; };
+		3BF6105E23E6793400572621 /* LocationEditionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEditionTableViewController.swift; sourceTree = "<group>"; };
+		3BF6106123E69A4800572621 /* DevelopmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentViewController.swift; sourceTree = "<group>"; };
+		3BF6106423E6A1EF00572621 /* RecordLocationSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordLocationSelectionTableViewController.swift; sourceTree = "<group>"; };
+		3BF6106623E6A2A800572621 /* RecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
+		3BF6106823E6A3BE00572621 /* DaoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoRecord.swift; sourceTree = "<group>"; };
+		3BF6106A23E6A5F400572621 /* VisitedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedItem.swift; sourceTree = "<group>"; };
+		3BF6106C23E6B4C900572621 /* VisitedItemSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedItemSet.swift; sourceTree = "<group>"; };
+		3BF6106E23E6BDF900572621 /* RecordNaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordNaviViewController.swift; sourceTree = "<group>"; };
+		3BF6107023E6C46800572621 /* PreviousRecordsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousRecordsTableViewController.swift; sourceTree = "<group>"; };
+		3BF6107323E6D18300572621 /* DetailLocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocationTableViewController.swift; sourceTree = "<group>"; };
+		3BF6107723E71BF100572621 /* DetailFinderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFinderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +101,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7E310123E7EA5000738A62 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6104123DFD69100572621 /* AreaDataTableViewController.swift */,
+				3B7E310223E7EA6400738A62 /* AreaEditViewController.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
 		3BF6101523DF163300572621 = {
 			isa = PBXGroup;
 			children = (
+				3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */,
+				3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */,
 				3BF6102023DF163300572621 /* SuppliesHelper */,
 				3BF6101F23DF163300572621 /* Products */,
 			);
@@ -50,7 +123,7 @@
 		3BF6101F23DF163300572621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BF6101E23DF163300572621 /* SuppliesHelper.app */,
+				3BF6101E23DF163300572621 /* Supplies Helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +131,16 @@
 		3BF6102023DF163300572621 /* SuppliesHelper */ = {
 			isa = PBXGroup;
 			children = (
+				3BF6106323E6A10D00572621 /* Record */,
+				3BF6106023E69A2D00572621 /* Development */,
+				3BF6105B23E6760900572621 /* LocationManage */,
+				3BF6105123E18F2500572621 /* DataPreparation */,
+				3BF6103E23DFD64200572621 /* DataManage */,
 				3BF6102123DF163300572621 /* AppDelegate.swift */,
 				3BF6102323DF163300572621 /* SceneDelegate.swift */,
 				3BF6102523DF163300572621 /* ViewController.swift */,
+				3BF6104723E02FEB00572621 /* EditItemViewController.swift */,
+				3BF6104F23E1607800572621 /* EditItemPickerView.swift */,
 				3BF6102723DF163300572621 /* Main.storyboard */,
 				3BF6102D23DF163400572621 /* Assets.xcassets */,
 				3BF6102F23DF163400572621 /* LaunchScreen.storyboard */,
@@ -68,6 +148,83 @@
 				3BF6102A23DF163300572621 /* SuppliesHelper.xcdatamodeld */,
 			);
 			path = SuppliesHelper;
+			sourceTree = "<group>";
+		};
+		3BF6103E23DFD64200572621 /* DataManage */ = {
+			isa = PBXGroup;
+			children = (
+				3B7E310123E7EA5000738A62 /* Area */,
+				3BF6105823E59DD100572621 /* DataModel */,
+				3BF6104923E0324800572621 /* DaoItem.swift */,
+				3BF6104B23E034B600572621 /* ItemDataTableViewController.swift */,
+				3BF6104D23E043BD00572621 /* DaoArea.swift */,
+				3BF6105423E298B100572621 /* DaoLocation.swift */,
+				3BF6106823E6A3BE00572621 /* DaoRecord.swift */,
+				3B7E311223EA8C8500738A62 /* DaoCupCount.swift */,
+				3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */,
+			);
+			path = DataManage;
+			sourceTree = "<group>";
+		};
+		3BF6105123E18F2500572621 /* DataPreparation */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6105223E18F5600572621 /* DefaultData.swift */,
+			);
+			path = DataPreparation;
+			sourceTree = "<group>";
+		};
+		3BF6105823E59DD100572621 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6105623E2BBF100572621 /* ReadableLocation.swift */,
+				3BF6105923E59DF300572621 /* LocationSelectionSet.swift */,
+				3BF6106A23E6A5F400572621 /* VisitedItem.swift */,
+				3BF6106C23E6B4C900572621 /* VisitedItemSet.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		3BF6105B23E6760900572621 /* LocationManage */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6105C23E6763D00572621 /* LocationSelectionTableViewController.swift */,
+				3BF6105E23E6793400572621 /* LocationEditionTableViewController.swift */,
+			);
+			path = LocationManage;
+			sourceTree = "<group>";
+		};
+		3BF6106023E69A2D00572621 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6106123E69A4800572621 /* DevelopmentViewController.swift */,
+				3B7E310423E8306200738A62 /* LoadDataViewController.swift */,
+				3B7E310E23EA5FAE00738A62 /* CupCountViewController.swift */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		3BF6106323E6A10D00572621 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6107223E6D16200572621 /* Detail */,
+				3BF6106423E6A1EF00572621 /* RecordLocationSelectionTableViewController.swift */,
+				3BF6106623E6A2A800572621 /* RecordController.swift */,
+				3BF6106E23E6BDF900572621 /* RecordNaviViewController.swift */,
+				3BF6107023E6C46800572621 /* PreviousRecordsTableViewController.swift */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		3BF6107223E6D16200572621 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6107323E6D18300572621 /* DetailLocationTableViewController.swift */,
+				3BF6107723E71BF100572621 /* DetailFinderTableViewController.swift */,
+				3B7E30FA23E7AC4C00738A62 /* DetailOutputTableViewController.swift */,
+				3B7E30FE23E7CA7F00738A62 /* DetailModifyViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +244,7 @@
 			);
 			name = SuppliesHelper;
 			productName = SuppliesHelper;
-			productReference = 3BF6101E23DF163300572621 /* SuppliesHelper.app */;
+			productReference = 3BF6101E23DF163300572621 /* Supplies Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,10 +298,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF6106B23E6A5F400572621 /* VisitedItem.swift in Sources */,
+				3BF6107123E6C46800572621 /* PreviousRecordsTableViewController.swift in Sources */,
+				3B7E310323E7EA6400738A62 /* AreaEditViewController.swift in Sources */,
+				3B7E30FF23E7CA7F00738A62 /* DetailModifyViewController.swift in Sources */,
+				3BF6105A23E59DF300572621 /* LocationSelectionSet.swift in Sources */,
+				3BF6106923E6A3BE00572621 /* DaoRecord.swift in Sources */,
 				3BF6102C23DF163300572621 /* SuppliesHelper.xcdatamodeld in Sources */,
+				3BF6104823E02FEB00572621 /* EditItemViewController.swift in Sources */,
+				3BF6107823E71BF100572621 /* DetailFinderTableViewController.swift in Sources */,
+				3BF6105323E18F5600572621 /* DefaultData.swift in Sources */,
+				3BF6106723E6A2A800572621 /* RecordController.swift in Sources */,
+				3BF6104223DFD69100572621 /* AreaDataTableViewController.swift in Sources */,
+				3BF6106223E69A4800572621 /* DevelopmentViewController.swift in Sources */,
+				3B7E311B23EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift in Sources */,
+				3BF6106F23E6BDF900572621 /* RecordNaviViewController.swift in Sources */,
+				3BF6105023E1607800572621 /* EditItemPickerView.swift in Sources */,
+				3BF6105523E298B100572621 /* DaoLocation.swift in Sources */,
+				3BF6104C23E034B600572621 /* ItemDataTableViewController.swift in Sources */,
+				3B7E311323EA8C8500738A62 /* DaoCupCount.swift in Sources */,
+				3BF6106D23E6B4C900572621 /* VisitedItemSet.swift in Sources */,
+				3B7E30FB23E7AC4C00738A62 /* DetailOutputTableViewController.swift in Sources */,
+				3BF6105D23E6763D00572621 /* LocationSelectionTableViewController.swift in Sources */,
+				3BF6107423E6D18300572621 /* DetailLocationTableViewController.swift in Sources */,
+				3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */,
+				3BF6105723E2BBF100572621 /* ReadableLocation.swift in Sources */,
+				3BF6104E23E043BD00572621 /* DaoArea.swift in Sources */,
+				3B7E310F23EA5FAE00738A62 /* CupCountViewController.swift in Sources */,
+				3BF6104A23E0324800572621 /* DaoItem.swift in Sources */,
 				3BF6102623DF163300572621 /* ViewController.swift in Sources */,
 				3BF6102223DF163300572621 /* AppDelegate.swift in Sources */,
+				3B7E311A23EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift in Sources */,
 				3BF6102423DF163300572621 /* SceneDelegate.swift in Sources */,
+				3BF6106523E6A1EF00572621 /* RecordLocationSelectionTableViewController.swift in Sources */,
+				3B7E310523E8306200738A62 /* LoadDataViewController.swift in Sources */,
+				3BF6105F23E6793400572621 /* LocationEditionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,16 +477,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				CURRENT_PROJECT_VERSION = 2028;
+				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yiyaozhang.tes.SuppliesHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiyaozhang.tes;
+				PRODUCT_NAME = "Supplies Helper";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,16 +497,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSCWTJD5B4;
+				CURRENT_PROJECT_VERSION = 2028;
+				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yiyaozhang.tes.SuppliesHelper;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiyaozhang.tes;
+				PRODUCT_NAME = "Supplies Helper";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
