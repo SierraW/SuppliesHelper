@@ -17,7 +17,7 @@ class RecordLocationSelectionTableViewController: UITableViewController {
         
         if controller.record != nil {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
             navigationItem.title = dateFormatter.string(from: controller.record.date!)
         }
         

@@ -235,7 +235,7 @@ extension CupCountViewController: UICollectionViewDataSource {
         
         if indexPath.item == cupCountRecord.count {
             cell.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
-            labelM.text = "新纪录"
+            labelM.text = "🆕"
             labelT.text = dateToString(at: Date(), format: "dd HH:mm")
             return cell
         }

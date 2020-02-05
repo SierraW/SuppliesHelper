@@ -30,7 +30,7 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func allData(_ sender: Any) {
         if !validateKey(txtData.text ?? "") {
-            popUpWindow(notification: "读取数据失败！请检查是否有拼写错误。")
+            popUpWindow(notification: "读取数据失败！\n密钥已过期或无效。")
             return
         }
         let reload = DefaultData()
@@ -43,7 +43,7 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func resetItem(_ sender: Any) {
         if !validateKey(txtData.text ?? "") {
-            popUpWindow(notification: "读取数据失败！请检查是否有拼写错误。")
+            popUpWindow(notification: "读取数据失败！\n密钥已过期或无效。")
             return
         }
         let reload = DefaultData()
@@ -54,7 +54,7 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func resetArea(_ sender: Any) {
         if !validateKey(txtData.text ?? "") {
-            popUpWindow(notification: "读取数据失败！请检查是否有拼写错误。")
+            popUpWindow(notification: "读取数据失败！\n密钥已过期或无效。")
             return
         }
         let reload = DefaultData()
@@ -65,7 +65,7 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func resetMapping(_ sender: Any) {
         if !validateKey(txtData.text ?? "") {
-            popUpWindow(notification: "读取数据失败！请检查是否有拼写错误。")
+            popUpWindow(notification: "读取数据失败！\n密钥已过期或无效。")
             return
         }
         let reload = DefaultData()
@@ -74,7 +74,8 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func validateKey(_ key: String) -> Bool {
-        return key == "StlAKalxYsKu56VBH"
+        let encoder = DataEncoder()
+        return encoder.validate(key: key)
     }
     
     func popUpWindow(notification str: String) {
@@ -87,7 +88,7 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         attrStr.addAttributes([NSAttributedString.Key.paragraphStyle: style], range: NSMakeRange(0, originStr.count))
-        attrStr.addAttributes([NSAttributedString.Key.font: UIFont(name: "PingFangSC-Regular", size: 15) ?? UIFont.systemFont(ofSize: 15)], range: NSMakeRange(0, originStr.count))
+        attrStr.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)], range: NSMakeRange(0, originStr.count))
         alert.setValue(attrStr, forKey: "attributedMessage")
 
         alert.addAction(sureAction)

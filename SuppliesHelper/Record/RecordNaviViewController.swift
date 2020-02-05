@@ -76,7 +76,7 @@ class RecordNaviViewController: UIViewController {
 //        let interval = NSTimeZone.system.secondsFromGMT()
 //        let now = gmtNow.addingTimeInterval(TimeInterval(interval))
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY/MM/dd HH:mm"
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
         return dateFormatter.string(from: gmtNow)
     }
     

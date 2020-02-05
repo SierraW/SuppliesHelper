@@ -16,6 +16,7 @@
 		3B7E311A23EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */; };
 		3B7E311B23EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */; };
 		3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */; };
+		3BA099C823EB0DD5000B3CF7 /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */; };
 		3BF6102223DF163300572621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102123DF163300572621 /* AppDelegate.swift */; };
 		3BF6102423DF163300572621 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102323DF163300572621 /* SceneDelegate.swift */; };
 		3BF6102623DF163300572621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102523DF163300572621 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShuyiCupHistory+CoreDataClass.swift"; path = "SuppliesHelper/DataManage/DataModel/ShuyiCupHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShuyiCupHistory+CoreDataProperties.swift"; path = "SuppliesHelper/DataManage/DataModel/ShuyiCupHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoShuyiApp.swift; sourceTree = "<group>"; };
+		3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
 		3BF6101E23DF163300572621 /* Supplies Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Supplies Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF6102123DF163300572621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF6102323DF163300572621 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				3BF6106123E69A4800572621 /* DevelopmentViewController.swift */,
 				3B7E310423E8306200738A62 /* LoadDataViewController.swift */,
 				3B7E310E23EA5FAE00738A62 /* CupCountViewController.swift */,
+				3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */,
 			);
 			path = Development;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				3BF6106B23E6A5F400572621 /* VisitedItem.swift in Sources */,
 				3BF6107123E6C46800572621 /* PreviousRecordsTableViewController.swift in Sources */,
+				3BA099C823EB0DD5000B3CF7 /* DataEncoder.swift in Sources */,
 				3B7E310323E7EA6400738A62 /* AreaEditViewController.swift in Sources */,
 				3B7E30FF23E7CA7F00738A62 /* DetailModifyViewController.swift in Sources */,
 				3BF6105A23E59DF300572621 /* LocationSelectionSet.swift in Sources */,
@@ -477,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2028;
+				CURRENT_PROJECT_VERSION = 2029;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2028;
+				CURRENT_PROJECT_VERSION = 2029;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -109,7 +109,7 @@ class RecordController {
         }
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         
         var output = "\(dateFormatter.string(from: Date()))\n"

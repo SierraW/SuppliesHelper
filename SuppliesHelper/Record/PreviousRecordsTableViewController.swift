@@ -45,7 +45,7 @@ class PreviousRecordsTableViewController: UITableViewController {
         let label = cell.contentView.subviews[0] as! UILabel
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         label.text = dateFormatter.string(from: recordArr[indexPath.item].date!)
 
