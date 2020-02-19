@@ -39,7 +39,7 @@ class EditItemViewController: UIViewController, UITextFieldDelegate {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         attrStr.addAttributes([NSAttributedString.Key.paragraphStyle: style], range: NSMakeRange(0, originStr.count))
-        attrStr.addAttributes([NSAttributedString.Key.font: UIFont(name: "PingFangSC-Regular", size: 15) ?? UIFont.systemFont(ofSize: 15)], range: NSMakeRange(0, originStr.count))
+        attrStr.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)], range: NSMakeRange(0, originStr.count))
         alert.setValue(attrStr, forKey: "attributedMessage")
 
         alert.addAction(sureAction)

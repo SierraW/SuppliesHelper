@@ -20,6 +20,12 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>数杯子功能需要调用您的相机</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>数杯子功能需要添加图片到您的相册</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>数杯子功能需要访问您的相册</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

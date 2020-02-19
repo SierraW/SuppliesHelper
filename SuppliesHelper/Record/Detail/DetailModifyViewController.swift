@@ -12,6 +12,7 @@ class DetailModifyViewController: UIViewController, UITextFieldDelegate {
     
     var itemIndex: Int!
     var controller: RecordController!
+    var sections: [ShuyiArea]!
 
     @IBOutlet weak var txtField: UITextField!
     
@@ -21,6 +22,14 @@ class DetailModifyViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        sections = []
+        let itemMapping = controller.sectionIsolatedItem
+        for i in 0..<itemMapping.count {
+            if itemMapping[i].contains(itemIndex) {
+                sections.append(controller.sections[i])
+            }
+        }
         
         let visitedItem = controller.itemSet.items[itemIndex]
         
@@ -123,4 +132,26 @@ class DetailModifyViewController: UIViewController, UITextFieldDelegate {
     }
     */
 
+}
+
+extension DetailModifyViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return sections.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Detail Cell", for: indexPath)
+        
+        let label = cell.contentView.subviews[0] as! UILabel
+        
+        label.text = sections[indexPath.item].name
+        
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        cell.contentView.layer.cornerRadius = 3.0
+        
+        return cell
+    }
+    
+    
 }

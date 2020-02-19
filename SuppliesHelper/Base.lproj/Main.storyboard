@@ -19,14 +19,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="areaTableCell" id="fzV-X1-wFg">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fzV-X1-wFg" id="w39-Uf-lQA">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Las-en-NTX">
-                                            <rect key="frame" x="20" y="11" width="270" height="21"/>
+                                            <rect key="frame" x="20" y="11" width="270" height="21.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="270" id="JMG-y5-Pmx"/>
                                             </constraints>
@@ -242,31 +242,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="q16-h1-4IT">
-                                <rect key="frame" x="141.5" y="287.5" width="131" height="326"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="Y9g-Oe-oL3">
+                                <rect key="frame" x="87" y="202" width="240" height="492"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKP-gD-ItF">
-                                        <rect key="frame" x="19.5" y="0.0" width="92" height="44.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <rect key="frame" x="88.5" y="0.0" width="63" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-Nz-4VQ">
-                                        <rect key="frame" x="0.0" y="83.5" width="131" height="32"/>
+                                        <rect key="frame" x="54.5" y="69" width="131" height="46.5"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
                                         </segments>
                                     </segmentedControl>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Ie-pK-LQF">
-                                        <rect key="frame" x="0.0" y="153.5" width="131" height="32"/>
+                                        <rect key="frame" x="54.5" y="153.5" width="131" height="32"/>
                                         <segments>
                                             <segment title="First"/>
                                             <segment title="Second"/>
                                         </segments>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QPV-SH-n5N">
-                                        <rect key="frame" x="18.5" y="223.5" width="94" height="102.5"/>
+                                        <rect key="frame" x="73" y="223.5" width="94" height="102.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余数目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n29-Vu-Gbr">
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="20.5"/>
@@ -287,14 +287,54 @@
                                             </stepper>
                                         </subviews>
                                     </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kJx-QQ-vq1">
+                                        <rect key="frame" x="0.0" y="365" width="240" height="127"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4eE-tA-XY4">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Detail Cell" id="5TM-Oj-A2Z">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="d7k-mM-fWH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlb-7l-ba2">
+                                                            <rect key="frame" x="4" y="15" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="zlb-7l-ba2" firstAttribute="centerY" secondItem="d7k-mM-fWH" secondAttribute="centerY" id="74l-ZJ-Xdn"/>
+                                                        <constraint firstItem="zlb-7l-ba2" firstAttribute="centerX" secondItem="d7k-mM-fWH" secondAttribute="centerX" id="Xn5-aX-k2o"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="IIr-Rs-UbK" id="sYu-rT-kYY"/>
+                                        </connections>
+                                    </collectionView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="kJx-QQ-vq1" firstAttribute="leading" secondItem="Y9g-Oe-oL3" secondAttribute="leadingMargin" id="Nek-Ir-MuQ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="q16-h1-4IT" firstAttribute="centerX" secondItem="K4K-Vy-p2P" secondAttribute="centerX" id="4wp-vC-x7J"/>
-                            <constraint firstItem="q16-h1-4IT" firstAttribute="centerY" secondItem="K4K-Vy-p2P" secondAttribute="centerY" id="rZW-cw-9QC"/>
+                            <constraint firstItem="Y9g-Oe-oL3" firstAttribute="leading" secondItem="K4K-Vy-p2P" secondAttribute="leading" constant="87" id="W6d-v8-WBN"/>
+                            <constraint firstItem="Y9g-Oe-oL3" firstAttribute="top" secondItem="K4K-Vy-p2P" secondAttribute="top" constant="114" id="Y00-KA-JPQ"/>
+                            <constraint firstItem="Y9g-Oe-oL3" firstAttribute="centerY" secondItem="YsO-mo-VPS" secondAttribute="centerY" id="Zve-XP-oLY"/>
+                            <constraint firstItem="Y9g-Oe-oL3" firstAttribute="centerX" secondItem="YsO-mo-VPS" secondAttribute="centerX" id="v9Z-aX-LbS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4K-Vy-p2P"/>
                         <connections>
@@ -353,7 +393,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-rm-5bI">
                                         <rect key="frame" x="0.0" y="0.0" width="154" height="57"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title="🆕新纪录"/>
+                                        <state key="normal" title="🆕新记录"/>
                                         <connections>
                                             <action selector="newRecord:" destination="0yf-HI-UJk" eventType="touchUpInside" id="pwi-3K-tju"/>
                                         </connections>
@@ -369,8 +409,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020-02-03 ver1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfI-Pr-nl9">
-                                <rect key="frame" x="257.5" y="792.5" width="146.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="273" y="795" width="131" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -382,6 +422,13 @@
                                     <segue destination="ALY-nx-zKG" kind="presentation" id="XGh-TI-ZWL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nx-8J-mJC">
+                                <rect key="frame" x="254" y="105" width="150" height="30"/>
+                                <state key="normal" title="人工智障数杯杯(Beta)"/>
+                                <connections>
+                                    <segue destination="Ec1-xH-Ykh" kind="show" id="N7r-ss-1cd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -389,9 +436,12 @@
                             <constraint firstItem="OrM-a2-0xj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="R9h-qL-D10" secondAttribute="trailing" constant="8" symbolic="YES" id="6NP-Zx-lXP"/>
                             <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="OrM-a2-0xj" secondAttribute="trailing" constant="20" id="Be3-wF-j3w"/>
                             <constraint firstItem="R9h-qL-D10" firstAttribute="centerX" secondItem="Es4-aF-fdz" secondAttribute="centerX" id="M6L-xx-4KF"/>
+                            <constraint firstItem="3Nx-8J-mJC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Es4-aF-fdz" secondAttribute="leading" symbolic="YES" id="QTo-Bl-bwX"/>
                             <constraint firstItem="yfI-Pr-nl9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Es4-aF-fdz" secondAttribute="leading" symbolic="YES" id="WFi-Pk-yMM"/>
+                            <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="3Nx-8J-mJC" secondAttribute="trailing" constant="10" id="Yny-4w-ihq"/>
                             <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="yfI-Pr-nl9" secondAttribute="trailing" constant="10" id="dsl-B2-UHd"/>
                             <constraint firstItem="OrM-a2-0xj" firstAttribute="centerY" secondItem="Es4-aF-fdz" secondAttribute="centerY" id="iRg-hP-vdO"/>
+                            <constraint firstItem="3Nx-8J-mJC" firstAttribute="top" secondItem="Es4-aF-fdz" secondAttribute="top" constant="17" id="tfQ-HC-Y20"/>
                             <constraint firstItem="yfI-Pr-nl9" firstAttribute="bottom" secondItem="Es4-aF-fdz" secondAttribute="bottom" id="xu4-Rm-k28"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Es4-aF-fdz"/>
@@ -406,6 +456,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCZ-rh-hfJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4025" y="-478"/>
+        </scene>
+        <!--CountCups-->
+        <scene sceneID="EzO-65-S2T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CountCups" id="Ec1-xH-Ykh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JAM-YO-Snk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1w-vT-Gd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4699" y="-801"/>
         </scene>
         <!--Previous Records Table View Controller-->
         <scene sceneID="IoZ-Qk-Y3l">
@@ -750,14 +810,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item Cell" id="QjA-JY-CAh">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QjA-JY-CAh" id="f9Q-L1-cqI">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-fX-N8d">
-                                            <rect key="frame" x="20" y="11" width="171" height="21.5"/>
+                                            <rect key="frame" x="20" y="11" width="171" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="171" id="3J6-ys-fHJ"/>
                                             </constraints>
@@ -766,7 +826,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-Xl-Fsa">
-                                            <rect key="frame" x="223" y="11" width="171" height="21.5"/>
+                                            <rect key="frame" x="223" y="11" width="171" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -996,7 +1056,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2l2-jW-f76"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Data Source" image="lightbulb" catalog="system" selectedImage="lightbulb.fill" id="Utd-n7-4d5"/>
+                    <tabBarItem key="tabBarItem" title="Data Source" image="archivebox" catalog="system" selectedImage="archivebox.fill" id="Utd-n7-4d5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYQ-9R-Nx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1017,10 +1077,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5ji-LB-AOC">
-                                <rect key="frame" x="149.5" y="289" width="115" height="230"/>
+                                <rect key="frame" x="85" y="289" width="244.5" height="230"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-50-rNX">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XXXXX-XXXXX-XXXXX-XXXXX" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TTF-50-rNX">
+                                        <rect key="frame" x="0.0" y="0.0" width="244.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -1028,7 +1088,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqX-RT-SNr">
-                                        <rect key="frame" x="0.0" y="50" width="115" height="33"/>
+                                        <rect key="frame" x="0.0" y="50" width="244.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Reset All Data"/>
                                         <connections>
@@ -1036,7 +1096,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdC-bn-wml">
-                                        <rect key="frame" x="0.0" y="99" width="115" height="33"/>
+                                        <rect key="frame" x="0.0" y="99" width="244.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Reset Item"/>
                                         <connections>
@@ -1044,7 +1104,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pX-Ir-anc">
-                                        <rect key="frame" x="0.0" y="148" width="115" height="33"/>
+                                        <rect key="frame" x="0.0" y="148" width="244.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Reset Area"/>
                                         <connections>
@@ -1052,7 +1112,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug8-wl-tBb">
-                                        <rect key="frame" x="0.0" y="197" width="115" height="33"/>
+                                        <rect key="frame" x="0.0" y="197" width="244.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Reset Mapping"/>
                                         <connections>
@@ -1061,9 +1121,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supplies Helper © Yiyao Zhang 2020. For education purpose only." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIk-on-2bI">
-                                <rect key="frame" x="75" y="796" width="319" height="12"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supplies Helper © Yiyao Zhang 2020." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIk-on-2bI">
+                                <rect key="frame" x="181" y="793.5" width="213" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1175,7 +1235,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0G-aH-hqI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0G-aH-hqI">
                                                 <rect key="frame" x="1.5" y="42" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1184,7 +1244,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="OMb-qm-qVL"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pXI-81-RF9">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pXI-81-RF9">
                                                 <rect key="frame" x="1.5" y="84" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1193,7 +1253,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="HPt-yc-rMN"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dew-X0-3rO">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dew-X0-3rO">
                                                 <rect key="frame" x="1.5" y="126" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1202,7 +1262,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="qM5-8e-GKm"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ku2-aX-viE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ku2-aX-viE">
                                                 <rect key="frame" x="1.5" y="168" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1211,7 +1271,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="TWG-BP-DNh"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amF-AL-W7b">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amF-AL-W7b">
                                                 <rect key="frame" x="1.5" y="210" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1220,7 +1280,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="goF-va-sOs"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-7x-rH5">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-7x-rH5">
                                                 <rect key="frame" x="1.5" y="252" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1229,7 +1289,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="cXW-OR-Wbc"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJQ-xU-qoN">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IJQ-xU-qoN">
                                                 <rect key="frame" x="1.5" y="294" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1238,7 +1298,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="vgy-hm-kjt"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PbN-GS-pN3">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PbN-GS-pN3">
                                                 <rect key="frame" x="1.5" y="336" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
@@ -1264,7 +1324,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdJ-60-QQD">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdJ-60-QQD">
                                                 <rect key="frame" x="1.5" y="42" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1273,7 +1333,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="97q-hH-3sj"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYl-OD-qKP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYl-OD-qKP">
                                                 <rect key="frame" x="1.5" y="84" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1282,7 +1342,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="9G5-Wq-Q4T"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-wQ-O83">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-wQ-O83">
                                                 <rect key="frame" x="1.5" y="126" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1291,7 +1351,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="vcJ-N3-4Go"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvD-tT-7lf">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XvD-tT-7lf">
                                                 <rect key="frame" x="1.5" y="168" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1300,7 +1360,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="1D1-FO-ce8"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OeW-My-80a">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OeW-My-80a">
                                                 <rect key="frame" x="1.5" y="210" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1309,7 +1369,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="qrK-hN-B0h"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-a6-0E1">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-a6-0E1">
                                                 <rect key="frame" x="1.5" y="252" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1318,7 +1378,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="9O7-be-kJM"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bo8-XH-tEd">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bo8-XH-tEd">
                                                 <rect key="frame" x="1.5" y="294" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1327,7 +1387,7 @@
                                                     <outlet property="delegate" destination="ALY-nx-zKG" id="mwF-Tw-05q"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1X-r2-uZQ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1X-r2-uZQ">
                                                 <rect key="frame" x="1.5" y="336" width="32" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1566,16 +1626,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="archivebox" catalog="system" width="64" height="52"/>
+        <image name="archivebox.fill" catalog="system" width="64" height="52"/>
         <image name="folder" catalog="system" width="64" height="46"/>
         <image name="folder.fill" catalog="system" width="64" height="46"/>
-        <image name="lightbulb" catalog="system" width="56" height="64"/>
-        <image name="lightbulb.fill" catalog="system" width="56" height="64"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="tray.full" catalog="system" width="64" height="44"/>
         <image name="tray.full.fill" catalog="system" width="64" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HgI-W3-fuE"/>
+        <segue reference="biN-0T-N1w"/>
         <segue reference="YAg-wn-CSR"/>
         <segue reference="sb3-t4-icd"/>
         <segue reference="Poi-zu-6gY"/>

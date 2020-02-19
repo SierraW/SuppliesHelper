@@ -64,10 +64,6 @@ class LoadDataViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func resetMapping(_ sender: Any) {
-        if !validateKey(txtData.text ?? "") {
-            popUpWindow(notification: "读取数据失败！\n密钥已过期或无效。")
-            return
-        }
         let reload = DefaultData()
         reload.resetLocation(dao: DaoLocation())
         popUpWindow(notification: "已重置货品/区域联系数据")

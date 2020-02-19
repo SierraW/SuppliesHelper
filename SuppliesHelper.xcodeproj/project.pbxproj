@@ -15,8 +15,14 @@
 		3B7E311323EA8C8500738A62 /* DaoCupCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311223EA8C8500738A62 /* DaoCupCount.swift */; };
 		3B7E311A23EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */; };
 		3B7E311B23EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */; };
+		3B855B3223FC0A110053F712 /* CountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3123FC0A110053F712 /* CountDetailViewController.swift */; };
+		3B855B3523FC0BA00053F712 /* ImgMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3423FC0BA00053F712 /* ImgMap.swift */; };
+		3B855B3723FC2D040053F712 /* ImgPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3623FC2D040053F712 /* ImgPoint.swift */; };
+		3B855B3B23FCE36D0053F712 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3A23FCE36D0053F712 /* NotificationView.swift */; };
 		3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */; };
 		3BA099C823EB0DD5000B3CF7 /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */; };
+		3BA09A4723FA6DFD000B3CF7 /* CountCups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */; };
+		3BA09A4B23FA6FC6000B3CF7 /* CameraCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA09A4A23FA6FC6000B3CF7 /* CameraCountViewController.swift */; };
 		3BF6102223DF163300572621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102123DF163300572621 /* AppDelegate.swift */; };
 		3BF6102423DF163300572621 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102323DF163300572621 /* SceneDelegate.swift */; };
 		3BF6102623DF163300572621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102523DF163300572621 /* ViewController.swift */; };
@@ -57,8 +63,14 @@
 		3B7E311223EA8C8500738A62 /* DaoCupCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoCupCount.swift; sourceTree = "<group>"; };
 		3B7E311823EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShuyiCupHistory+CoreDataClass.swift"; path = "SuppliesHelper/DataManage/DataModel/ShuyiCupHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3B7E311923EAA6E100738A62 /* ShuyiCupHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ShuyiCupHistory+CoreDataProperties.swift"; path = "SuppliesHelper/DataManage/DataModel/ShuyiCupHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3B855B3123FC0A110053F712 /* CountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDetailViewController.swift; sourceTree = "<group>"; };
+		3B855B3423FC0BA00053F712 /* ImgMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgMap.swift; sourceTree = "<group>"; };
+		3B855B3623FC2D040053F712 /* ImgPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgPoint.swift; sourceTree = "<group>"; };
+		3B855B3A23FCE36D0053F712 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoShuyiApp.swift; sourceTree = "<group>"; };
 		3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
+		3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountCups.storyboard; sourceTree = "<group>"; };
+		3BA09A4A23FA6FC6000B3CF7 /* CameraCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCountViewController.swift; sourceTree = "<group>"; };
 		3BF6101E23DF163300572621 /* Supplies Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Supplies Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF6102123DF163300572621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF6102323DF163300572621 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +81,7 @@
 		3BF6103023DF163400572621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF6103223DF163400572621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF6104123DFD69100572621 /* AreaDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataTableViewController.swift; sourceTree = "<group>"; };
-		3BF6104723E02FEB00572621 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditItemViewController.swift; path = DataManage/EditItemViewController.swift; sourceTree = "<group>"; };
+		3BF6104723E02FEB00572621 /* EditItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemViewController.swift; sourceTree = "<group>"; };
 		3BF6104923E0324800572621 /* DaoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoItem.swift; sourceTree = "<group>"; };
 		3BF6104B23E034B600572621 /* ItemDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataTableViewController.swift; sourceTree = "<group>"; };
 		3BF6104D23E043BD00572621 /* DaoArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoArea.swift; sourceTree = "<group>"; };
@@ -112,6 +124,36 @@
 			path = Area;
 			sourceTree = "<group>";
 		};
+		3B855B3323FC0B850053F712 /* ImgProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				3B855B3423FC0BA00053F712 /* ImgMap.swift */,
+				3B855B3623FC2D040053F712 /* ImgPoint.swift */,
+			);
+			path = ImgProcessing;
+			sourceTree = "<group>";
+		};
+		3BA09A4823FA6EA4000B3CF7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6102523DF163300572621 /* ViewController.swift */,
+				3BF6104723E02FEB00572621 /* EditItemViewController.swift */,
+				3BF6104F23E1607800572621 /* EditItemPickerView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3BA09A4923FA6EB6000B3CF7 /* CameraCount */ = {
+			isa = PBXGroup;
+			children = (
+				3B855B3323FC0B850053F712 /* ImgProcessing */,
+				3BA09A4A23FA6FC6000B3CF7 /* CameraCountViewController.swift */,
+				3B855B3123FC0A110053F712 /* CountDetailViewController.swift */,
+				3B855B3A23FCE36D0053F712 /* NotificationView.swift */,
+			);
+			path = CameraCount;
+			sourceTree = "<group>";
+		};
 		3BF6101523DF163300572621 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +175,8 @@
 		3BF6102023DF163300572621 /* SuppliesHelper */ = {
 			isa = PBXGroup;
 			children = (
+				3BA09A4923FA6EB6000B3CF7 /* CameraCount */,
+				3BA09A4823FA6EA4000B3CF7 /* Main */,
 				3BF6106323E6A10D00572621 /* Record */,
 				3BF6106023E69A2D00572621 /* Development */,
 				3BF6105B23E6760900572621 /* LocationManage */,
@@ -140,10 +184,8 @@
 				3BF6103E23DFD64200572621 /* DataManage */,
 				3BF6102123DF163300572621 /* AppDelegate.swift */,
 				3BF6102323DF163300572621 /* SceneDelegate.swift */,
-				3BF6102523DF163300572621 /* ViewController.swift */,
-				3BF6104723E02FEB00572621 /* EditItemViewController.swift */,
-				3BF6104F23E1607800572621 /* EditItemPickerView.swift */,
 				3BF6102723DF163300572621 /* Main.storyboard */,
+				3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */,
 				3BF6102D23DF163400572621 /* Assets.xcassets */,
 				3BF6102F23DF163400572621 /* LaunchScreen.storyboard */,
 				3BF6103223DF163400572621 /* Info.plist */,
@@ -291,6 +333,7 @@
 				3BF6103123DF163400572621 /* LaunchScreen.storyboard in Resources */,
 				3BF6102E23DF163400572621 /* Assets.xcassets in Resources */,
 				3BF6102923DF163300572621 /* Main.storyboard in Resources */,
+				3BA09A4723FA6DFD000B3CF7 /* CountCups.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF6106B23E6A5F400572621 /* VisitedItem.swift in Sources */,
+				3B855B3523FC0BA00053F712 /* ImgMap.swift in Sources */,
 				3BF6107123E6C46800572621 /* PreviousRecordsTableViewController.swift in Sources */,
 				3BA099C823EB0DD5000B3CF7 /* DataEncoder.swift in Sources */,
 				3B7E310323E7EA6400738A62 /* AreaEditViewController.swift in Sources */,
@@ -323,6 +367,7 @@
 				3B7E311323EA8C8500738A62 /* DaoCupCount.swift in Sources */,
 				3BF6106D23E6B4C900572621 /* VisitedItemSet.swift in Sources */,
 				3B7E30FB23E7AC4C00738A62 /* DetailOutputTableViewController.swift in Sources */,
+				3B855B3B23FCE36D0053F712 /* NotificationView.swift in Sources */,
 				3BF6105D23E6763D00572621 /* LocationSelectionTableViewController.swift in Sources */,
 				3BF6107423E6D18300572621 /* DetailLocationTableViewController.swift in Sources */,
 				3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */,
@@ -332,7 +377,10 @@
 				3BF6104A23E0324800572621 /* DaoItem.swift in Sources */,
 				3BF6102623DF163300572621 /* ViewController.swift in Sources */,
 				3BF6102223DF163300572621 /* AppDelegate.swift in Sources */,
+				3B855B3723FC2D040053F712 /* ImgPoint.swift in Sources */,
 				3B7E311A23EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift in Sources */,
+				3BA09A4B23FA6FC6000B3CF7 /* CameraCountViewController.swift in Sources */,
+				3B855B3223FC0A110053F712 /* CountDetailViewController.swift in Sources */,
 				3BF6102423DF163300572621 /* SceneDelegate.swift in Sources */,
 				3BF6106523E6A1EF00572621 /* RecordLocationSelectionTableViewController.swift in Sources */,
 				3B7E310523E8306200738A62 /* LoadDataViewController.swift in Sources */,
@@ -481,14 +529,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2029;
+				CURRENT_PROJECT_VERSION = 2040;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiyaozhang.tes;
 				PRODUCT_NAME = "Supplies Helper";
 				SWIFT_VERSION = 5.0;
@@ -501,14 +549,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2029;
+				CURRENT_PROJECT_VERSION = 2040;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiyaozhang.tes;
 				PRODUCT_NAME = "Supplies Helper";
 				SWIFT_VERSION = 5.0;

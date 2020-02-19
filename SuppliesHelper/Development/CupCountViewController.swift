@@ -45,6 +45,9 @@ class CupCountViewController: UIViewController, UITextFieldDelegate {
         
         cupCount = daoCupCount.getCupCount(at: Date())
         cupCountRecord = daoCupCount.getCupCounts(predicate: nil)
+        cupCountRecord.sort(by: {history0, history1 in
+            return history0.date.timeIntervalSince(history1.date) < 0
+        })
         
         reloadData()
         
@@ -175,6 +178,7 @@ class CupCountViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // MARK: Popup Window
     
     
     func popUpWindow(message str: String, isDeleting: Bool){
@@ -220,6 +224,8 @@ class CupCountViewController: UIViewController, UITextFieldDelegate {
 
 }
 
+// MARK: Collection View Controller
+
 extension CupCountViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cupCountRecord.count + 1
@@ -233,8 +239,12 @@ extension CupCountViewController: UICollectionViewDataSource {
         let labelM = stack.arrangedSubviews[0] as! UILabel
         let labelT = stack.arrangedSubviews[1] as! UILabel
         
+        cell.contentView.layer.cornerRadius = 7.0
+
+
+        
         if indexPath.item == cupCountRecord.count {
-            cell.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
             labelM.text = "🆕"
             labelT.text = dateToString(at: Date(), format: "dd HH:mm")
             return cell
@@ -243,9 +253,9 @@ extension CupCountViewController: UICollectionViewDataSource {
         let index = indexPath.item
         
         if cupCount.date == cupCountRecord[index].date {
-            cell.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
         } else {
-            cell.backgroundColor = #colorLiteral(red: 0.7540688515, green: 0.7540867925, blue: 0.7540771365, alpha: 1)
+            cell.contentView.backgroundColor = #colorLiteral(red: 0.7540688515, green: 0.7540867925, blue: 0.7540771365, alpha: 1)
         }
         
         let date = cupCountRecord[index].date
