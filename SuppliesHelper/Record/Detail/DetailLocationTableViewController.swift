@@ -21,13 +21,26 @@ class DetailLocationTableViewController: UITableViewController {
         
         tableView.rowHeight = 82
 
-        reload()
+        if sectionIndex == nil {
+            (visitedSet, unvisitSet) = controller.getItems(at: nil)
+        } else {
+            (visitedSet, unvisitSet) = controller.getItems(at: sectionIndex)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
+    
+    func scrollToVisited(at position: Int) {
+        let index = unvisitSet.count - position - 1
+        if index > 0 {
+            tableView.scrollToRow(at: IndexPath(item: index, section: 0), at: .middle, animated: false)
+        }
+    }
+    
 
     // MARK: - Table view data source
 
@@ -71,7 +84,7 @@ class DetailLocationTableViewController: UITableViewController {
         let lblCount = stack.arrangedSubviews[0] as! UILabel
         let stepper = stack.arrangedSubviews[1] as! UIStepper
         
-        stepper.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        stepper.transform = CGAffineTransform(scaleX: 1.3, y: 1.4)
         stepper.tag = Int(vi.shuyiItem.id_item)
         stepper.autorepeat = true
         stepper.addTarget(self, action: #selector(tapped), for: .valueChanged)
@@ -98,19 +111,23 @@ class DetailLocationTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            controller.visit(at: unvisitSet[indexPath.item])
+            let item = unvisitSet[indexPath.item]
+            controller.visit(at: item)
+            visitedSet.insert(item, at: 0)
+            reload()
         } else {
             controller.labelItem(at: visitedSet[indexPath.item])
         }
-        reload()
+        
         tableView.reloadData()
+        scrollToVisited(at: 2)
     }
     
     func reload() {
         if sectionIndex == nil {
-            (visitedSet, unvisitSet) = controller.getItems(at: nil)
+            (_, unvisitSet) = controller.getItems(at: nil)
         } else {
-            (visitedSet, unvisitSet) = controller.getItems(at: sectionIndex)
+            (_, unvisitSet) = controller.getItems(at: sectionIndex)
         }
     }
 

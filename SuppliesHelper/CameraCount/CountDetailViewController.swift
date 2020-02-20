@@ -14,14 +14,43 @@ class CountDetailViewController: UIViewController {
     
     @IBOutlet weak var imgInput: UIImageView!
     
+    @IBOutlet weak var txtTitle: UILabel!
+    
     var img: UIImage!
     var controller: ImgMap!
+    var mode: CountMode!
+    var outputData: [Int] = []
+    
+    enum CountMode {
+        case normal, contrast
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         controller = ImgMap(image: img)
         imgInput.image = img
-        txtOutput.text = displayResult(output: getResult())
+        
+        if mode == .normal {
+            txtTitle.text = "结果（纸杯）"
+            outputData.append(4)
+            txtOutput.text = displayResult(output: getResult())
+        } else if mode == .contrast {
+            txtTitle.text = "结果（塑料杯）"
+            outputData.append(0)
+            txtOutput.text = displayResult(output: getResultContrastMode())
+        }
+    }
+    
+    func getResultContrastMode() -> [Int: Int] {
+        var outputMap: [Int: Int] = [:]
+        for filter in 16...19 {
+            controller.filter = filter
+            let result = controller.getResultBasedOnContrast()
+            let filteredOutput = controller.filterOutput(record: result, filter: (100,100,100))
+            let count = controller.processContrastComparingResult(filteredOutput: filteredOutput)
+            outputMap[count] = (outputMap[count] ?? 0) + 1
+        }
+        return outputMap
     }
     
     func getResult() -> [Int: Int] {
@@ -68,9 +97,19 @@ class CountDetailViewController: UIViewController {
     
     func displayResult(output map:[Int: Int]) -> String {
         var total = 0
-        for (_, value) in map {
+        var maxKey = 0
+        var maxValue = 0
+        for (key, value) in map {
             total += value
+            
+            if value > maxValue {
+                maxKey = key
+                maxValue = value
+            }
         }
+        
+        outputData.append(maxKey)
+        
         var output = ""
         for (key, value) in map {
             output.append("一共有\(key)个杯子 \(String(format: "%.1f%@", Double(value) / Double(total) * 100.0, "%"))\n")
@@ -78,15 +117,16 @@ class CountDetailViewController: UIViewController {
         return output
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "Camera Count Output" {
+            if let ccvc = segue.destination as? CupCountViewController {
+                ccvc.dataInputed = outputData
+            }
+        }
     }
-    */
 
 }
 

@@ -42,9 +42,13 @@ class CameraCountViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @objc func showNotification() {
-        if self.notificationView.alpha < CGFloat(0.1) {
+        if self.notificationView.alpha < CGFloat(0.5) {
             UIView.animate(withDuration: 0.4, animations: {
                 self.notificationView.alpha = 1
+            })
+        } else {
+            UIView.animate(withDuration: 0.4, animations: {
+                self.notificationView.alpha = 0
             })
         }
     }
@@ -74,13 +78,20 @@ class CameraCountViewController: UIViewController, UIImagePickerControllerDelega
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Count Detail" {
-            if let cdvc = segue.destination as? CountDetailViewController {
-                let image = imgView.image!
-                cdvc.img = image
-                //cdvc.controller = ImgMap(image: image)
+        if let cdvc = segue.destination as? CountDetailViewController {
+            let image = imgView.image!
+            cdvc.img = image
+            
+            if segue.identifier == "Count Detail" {
+                cdvc.mode = .normal
             }
+            if segue.identifier == "Count Detail Contrast" {
+                cdvc.mode = .contrast
+            }
+            
         }
+        
+        
     }
 
 }

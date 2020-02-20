@@ -41,7 +41,7 @@ class NotificationView: UIView {
         let vibrancyView = UIVisualEffectView(effect: vibrancyEffect)
         vibrancyView.frame = bounds
         let text = UILabel(frame: CGRect(x: 10, y: bounds.width / 2 - 50, width: bounds.width - 20, height: bounds.height / 2))
-        text.text = "原理：\n\t屏幕中线切割杯沿的白边\n\n使用方法：\n\t选择一张或者拍一张照片，然后点击相应按钮。\n\n小提示：\n\t请尽量把杯子们放到屏幕中间位置，并让杯沿成为图片里最亮的崽！"
+        text.text = "原理：\n\t屏幕中线切割杯沿的白边。\n\n使用方法：\n\t选择一张或者拍一张照片，然后点击相应按钮。\n\n小提示：\n\t请尽量把杯子们放到屏幕中间位置，并让杯沿成为图片里最亮的崽！"
         text.font = UIFont.boldSystemFont(ofSize: 20)
         text.numberOfLines = 0
         text.textAlignment = .left

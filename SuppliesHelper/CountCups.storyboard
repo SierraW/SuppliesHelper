@@ -11,7 +11,6 @@
         <!--Camera Count View Controller-->
         <scene sceneID="TpG-QO-Hlt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3j3-Ti-baR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="4fi-Km-Hbt" customClass="CameraCountViewController" customModule="Supplies_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QhI-tb-Gjt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -41,14 +40,27 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-f1-oGp">
-                                        <rect key="frame" x="111" y="276.5" width="108" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="¡数纸杯!"/>
-                                        <connections>
-                                            <segue destination="46L-lh-dWi" kind="presentation" identifier="Count Detail" id="VZa-If-s1w"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="kac-co-WW4">
+                                        <rect key="frame" x="7.5" y="276.5" width="315" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-f1-oGp">
+                                                <rect key="frame" x="0.0" y="0.0" width="108" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="¡数纸杯!"/>
+                                                <connections>
+                                                    <segue destination="46L-lh-dWi" kind="presentation" identifier="Count Detail" id="VZa-If-s1w"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-wG-Od0">
+                                                <rect key="frame" x="207" y="0.0" width="108" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="¡数塑杯!"/>
+                                                <connections>
+                                                    <segue destination="46L-lh-dWi" kind="presentation" identifier="Count Detail Contrast" id="aRG-yt-4Cd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="MEe-jb-460">
@@ -86,6 +98,7 @@
                         <outlet property="notificationView" destination="fPs-cU-rvh" id="8Qg-bb-Hap"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3j3-Ti-baR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="sho-0A-qVm">
                     <connections>
                         <action selector="tapScreen:" destination="fPs-cU-rvh" id="YkE-qW-mZX"/>
@@ -102,9 +115,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-Tv-Byk">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-Tv-Byk">
                                 <rect key="frame" x="20" y="646" width="374" height="162"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="gwu-pm-2d0"/>
                                 </constraints>
@@ -122,17 +135,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcy-yz-eKB">
+                                <rect key="frame" x="302" y="778" width="92" height="30"/>
+                                <state key="normal" title="输出到计算器"/>
+                                <connections>
+                                    <segue destination="Fot-Zq-Nwk" kind="presentation" identifier="Camera Count Output" id="xoE-1W-aJu"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2jj-VM-wL6" firstAttribute="top" secondItem="ZuT-6K-o9d" secondAttribute="top" constant="20" id="7V9-dS-u3d"/>
                             <constraint firstItem="2jj-VM-wL6" firstAttribute="leading" secondItem="ZuT-6K-o9d" secondAttribute="leading" constant="20" id="8Wo-yJ-kfg"/>
                             <constraint firstItem="ZuT-6K-o9d" firstAttribute="bottom" secondItem="lqq-Tv-Byk" secondAttribute="bottom" id="Ff9-vJ-4bw"/>
-                            <constraint firstItem="lqq-Tv-Byk" firstAttribute="firstBaseline" secondItem="Wk6-xy-Wd2" secondAttribute="baseline" constant="28" symbolType="layoutAnchor" id="KPo-3e-niR"/>
+                            <constraint firstItem="lqq-Tv-Byk" firstAttribute="firstBaseline" secondItem="Wk6-xy-Wd2" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="KPo-3e-niR"/>
                             <constraint firstItem="Wk6-xy-Wd2" firstAttribute="centerX" secondItem="ZuT-6K-o9d" secondAttribute="centerX" id="Se0-S1-bz3"/>
                             <constraint firstItem="Wk6-xy-Wd2" firstAttribute="leading" secondItem="ZuT-6K-o9d" secondAttribute="leading" constant="50" id="aTx-Ho-4R9"/>
                             <constraint firstItem="Wk6-xy-Wd2" firstAttribute="top" secondItem="2jj-VM-wL6" secondAttribute="bottom" constant="8" id="dqu-vX-UGZ"/>
+                            <constraint firstItem="ZuT-6K-o9d" firstAttribute="bottom" secondItem="Xcy-yz-eKB" secondAttribute="bottom" id="fHl-NN-f3U"/>
                             <constraint firstItem="lqq-Tv-Byk" firstAttribute="centerX" secondItem="ZuT-6K-o9d" secondAttribute="centerX" id="poC-Bl-Evr"/>
+                            <constraint firstItem="ZuT-6K-o9d" firstAttribute="trailing" secondItem="Xcy-yz-eKB" secondAttribute="trailing" constant="20" id="pw3-bX-b5e"/>
                             <constraint firstItem="lqq-Tv-Byk" firstAttribute="leading" secondItem="bRW-wJ-CPd" secondAttribute="leadingMargin" id="xr5-Zy-qzB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZuT-6K-o9d"/>
@@ -140,14 +162,26 @@
                     <connections>
                         <outlet property="imgInput" destination="Wk6-xy-Wd2" id="DsO-Dd-IYU"/>
                         <outlet property="txtOutput" destination="lqq-Tv-Byk" id="xPp-Zg-RNw"/>
+                        <outlet property="txtTitle" destination="2jj-VM-wL6" id="xEP-5Q-Seo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRR-MS-Y5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="132.58928571428572"/>
         </scene>
+        <!--CountCupView-->
+        <scene sceneID="dsf-t9-EJx">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CountCupView" storyboardName="Main" referencedIdentifier="CountCupView" id="Fot-Zq-Nwk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQN-QC-gNN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="127"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Icon" width="1024" height="1024"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aRG-yt-4Cd"/>
+    </inferredMetricsTieBreakers>
 </document>

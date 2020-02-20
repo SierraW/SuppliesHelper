@@ -13,6 +13,8 @@ class CupCountViewController: UIViewController, UITextFieldDelegate {
     var daoCupCount: DaoCupCount!
     var cupCountRecord: [ShuyiCupHistory]!
     var cupCount: ShuyiCupHistory!
+    
+    var dataInputed: [Int]?
 
     @IBOutlet var txtInputField: [UITextField]!
     
@@ -51,6 +53,13 @@ class CupCountViewController: UIViewController, UITextFieldDelegate {
         
         reloadData()
         
+        if dataInputed != nil, dataInputed?.count == 2 {
+            let index = dataInputed![0] + 1
+            if let txtInput = stackNight.arrangedSubviews[index] as? UITextField {
+                txtInput.text = "\(dataInputed![1])"
+                calculateSubtotal()
+            }
+        }
 
         lblDate.text = "\(dateToString(at: Date(), format: "YYYY-MM-dd"))"
         

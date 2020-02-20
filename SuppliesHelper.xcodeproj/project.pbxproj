@@ -19,6 +19,7 @@
 		3B855B3523FC0BA00053F712 /* ImgMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3423FC0BA00053F712 /* ImgMap.swift */; };
 		3B855B3723FC2D040053F712 /* ImgPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3623FC2D040053F712 /* ImgPoint.swift */; };
 		3B855B3B23FCE36D0053F712 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3A23FCE36D0053F712 /* NotificationView.swift */; };
+		3B855B3F23FD89E00053F712 /* ImgContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3E23FD89E00053F712 /* ImgContrast.swift */; };
 		3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */; };
 		3BA099C823EB0DD5000B3CF7 /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */; };
 		3BA09A4723FA6DFD000B3CF7 /* CountCups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */; };
@@ -67,6 +68,7 @@
 		3B855B3423FC0BA00053F712 /* ImgMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgMap.swift; sourceTree = "<group>"; };
 		3B855B3623FC2D040053F712 /* ImgPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgPoint.swift; sourceTree = "<group>"; };
 		3B855B3A23FCE36D0053F712 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3B855B3E23FD89E00053F712 /* ImgContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgContrast.swift; sourceTree = "<group>"; };
 		3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoShuyiApp.swift; sourceTree = "<group>"; };
 		3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
 		3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountCups.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				3B855B3423FC0BA00053F712 /* ImgMap.swift */,
 				3B855B3623FC2D040053F712 /* ImgPoint.swift */,
+				3B855B3E23FD89E00053F712 /* ImgContrast.swift */,
 			);
 			path = ImgProcessing;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				3BF6105D23E6763D00572621 /* LocationSelectionTableViewController.swift in Sources */,
 				3BF6107423E6D18300572621 /* DetailLocationTableViewController.swift in Sources */,
 				3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */,
+				3B855B3F23FD89E00053F712 /* ImgContrast.swift in Sources */,
 				3BF6105723E2BBF100572621 /* ReadableLocation.swift in Sources */,
 				3BF6104E23E043BD00572621 /* DaoArea.swift in Sources */,
 				3B7E310F23EA5FAE00738A62 /* CupCountViewController.swift in Sources */,
@@ -529,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2040;
+				CURRENT_PROJECT_VERSION = 2041;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,7 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2040;
+				CURRENT_PROJECT_VERSION = 2041;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
