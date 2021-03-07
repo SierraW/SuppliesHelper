@@ -25,6 +25,8 @@ class LocationSelectionTableViewController: UITableViewController {
         daoArea = DaoArea()
         
         shuyiAreas = daoArea.getAreas()
+        
+        tableView.style
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

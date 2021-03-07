@@ -11,7 +11,7 @@ import Foundation
 class DataEncoder {
     let length = 20
     let lengthWithDash = 23
-    let precision = 30*60.0
+    let precision = 24*60*60.0
     
     let map: [[Character]] = [["g","z","i","w","A","X"],["t","y","l","5","6"],["h","s","j","C","9"],["o","m","d","B"],["p","r","u","E"],["v","q","V","Q"],["e","P","R","U"],["b","O","M","D"],["c","H","S","J"],["n","T","Y","L"],["a","I","G","Z","1"],["W","0","4","8","7","N","3","2"]]
 

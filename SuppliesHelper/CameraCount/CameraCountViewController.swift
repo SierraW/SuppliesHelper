@@ -81,14 +81,11 @@ class CameraCountViewController: UIViewController, UIImagePickerControllerDelega
         if let cdvc = segue.destination as? CountDetailViewController {
             let image = imgView.image!
             cdvc.img = image
-            
-            if segue.identifier == "Count Detail" {
+            if segue.identifier == "Count Detail"{
                 cdvc.mode = .normal
-            }
-            if segue.identifier == "Count Detail Contrast" {
+            } else if segue.identifier == "Count Detail Contrast" {
                 cdvc.mode = .contrast
             }
-            
         }
         
         

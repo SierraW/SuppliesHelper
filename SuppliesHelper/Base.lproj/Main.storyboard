@@ -64,7 +64,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bF6-DY-4WE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5504" y="-1669"/>
+            <point key="canvasLocation" x="2193" y="1108"/>
         </scene>
         <!--Edit Item View Controller-->
         <scene sceneID="fLu-ye-gWs">
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ww-5x-x3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7767" y="-992"/>
+            <point key="canvasLocation" x="2729" y="1879"/>
         </scene>
         <!--Detail Finder Table View Controller-->
         <scene sceneID="xYC-v1-Xhm">
@@ -232,7 +232,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="26r-Qg-hcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7767" y="-321"/>
+            <point key="canvasLocation" x="7842" y="-767"/>
         </scene>
         <!--Detail Modify View Controller-->
         <scene sceneID="Co6-vv-WKx">
@@ -355,7 +355,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="8621.7391304347839" y="-321.42857142857139"/>
+            <point key="canvasLocation" x="8684" y="-767"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LcL-e2-wo8">
@@ -370,9 +370,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="O5w-4t-0FL" kind="relationship" relationship="viewControllers" id="tCu-6B-5ma"/>
+                        <segue destination="nhY-rt-FND" kind="relationship" relationship="viewControllers" id="84p-lB-1qB"/>
                         <segue destination="j69-eq-JDG" kind="relationship" relationship="viewControllers" id="O34-rg-FrO"/>
-                        <segue destination="Xxb-CS-InP" kind="relationship" relationship="viewControllers" id="aug-WS-CbQ"/>
-                        <segue destination="KFT-OA-PrG" kind="relationship" relationship="viewControllers" id="RSS-Xg-GN1"/>
+                        <segue destination="QAo-xn-kOo" kind="relationship" relationship="viewControllers" id="RSS-Xg-GN1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qN7-tG-RW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -387,21 +387,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="171" translatesAutoresizingMaskIntoConstraints="NO" id="R9h-qL-D10">
-                                <rect key="frame" x="130" y="308" width="154" height="285"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="178" translatesAutoresizingMaskIntoConstraints="NO" id="R9h-qL-D10">
+                                <rect key="frame" x="161" y="326.5" width="223" height="268"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-rm-5bI">
-                                        <rect key="frame" x="0.0" y="0.0" width="154" height="57"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title="🆕新记录"/>
+                                        <rect key="frame" x="82" y="0.0" width="141" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="🆕开始盘货"/>
                                         <connections>
                                             <action selector="newRecord:" destination="0yf-HI-UJk" eventType="touchUpInside" id="pwi-3K-tju"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPM-NK-2iU">
-                                        <rect key="frame" x="2" y="228" width="150" height="57"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                        <state key="normal" title="以往记录"/>
+                                        <rect key="frame" x="0.0" y="223" width="223" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="🔄从以往记录开始"/>
                                         <connections>
                                             <segue destination="1Ab-Nf-f51" kind="show" id="qHM-y2-27r"/>
                                         </connections>
@@ -414,34 +414,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-a2-0xj">
-                                <rect key="frame" x="262" y="429.5" width="132" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="🥤数杯子➡️"/>
-                                <connections>
-                                    <segue destination="ALY-nx-zKG" kind="presentation" id="XGh-TI-ZWL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nx-8J-mJC">
-                                <rect key="frame" x="254" y="105" width="150" height="30"/>
-                                <state key="normal" title="人工智障数杯杯(Beta)"/>
-                                <connections>
-                                    <segue destination="Ec1-xH-Ykh" kind="show" id="N7r-ss-1cd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="R9h-qL-D10" firstAttribute="centerY" secondItem="Es4-aF-fdz" secondAttribute="centerY" id="0gi-Ax-UQ9"/>
-                            <constraint firstItem="OrM-a2-0xj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="R9h-qL-D10" secondAttribute="trailing" constant="8" symbolic="YES" id="6NP-Zx-lXP"/>
-                            <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="OrM-a2-0xj" secondAttribute="trailing" constant="20" id="Be3-wF-j3w"/>
-                            <constraint firstItem="R9h-qL-D10" firstAttribute="centerX" secondItem="Es4-aF-fdz" secondAttribute="centerX" id="M6L-xx-4KF"/>
-                            <constraint firstItem="3Nx-8J-mJC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Es4-aF-fdz" secondAttribute="leading" symbolic="YES" id="QTo-Bl-bwX"/>
+                            <constraint firstItem="R9h-qL-D10" firstAttribute="centerY" secondItem="Es4-aF-fdz" secondAttribute="centerY" constant="10" id="0gi-Ax-UQ9"/>
+                            <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="R9h-qL-D10" secondAttribute="trailing" constant="30" id="LSG-FB-w6I"/>
                             <constraint firstItem="yfI-Pr-nl9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Es4-aF-fdz" secondAttribute="leading" symbolic="YES" id="WFi-Pk-yMM"/>
-                            <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="3Nx-8J-mJC" secondAttribute="trailing" constant="10" id="Yny-4w-ihq"/>
                             <constraint firstItem="Es4-aF-fdz" firstAttribute="trailing" secondItem="yfI-Pr-nl9" secondAttribute="trailing" constant="10" id="dsl-B2-UHd"/>
-                            <constraint firstItem="OrM-a2-0xj" firstAttribute="centerY" secondItem="Es4-aF-fdz" secondAttribute="centerY" id="iRg-hP-vdO"/>
-                            <constraint firstItem="3Nx-8J-mJC" firstAttribute="top" secondItem="Es4-aF-fdz" secondAttribute="top" constant="17" id="tfQ-HC-Y20"/>
                             <constraint firstItem="yfI-Pr-nl9" firstAttribute="bottom" secondItem="Es4-aF-fdz" secondAttribute="bottom" id="xu4-Rm-k28"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Es4-aF-fdz"/>
@@ -465,7 +444,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1w-vT-Gd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4699" y="-801"/>
+            <point key="canvasLocation" x="4117" y="-1066"/>
         </scene>
         <!--Previous Records Table View Controller-->
         <scene sceneID="IoZ-Qk-Y3l">
@@ -510,7 +489,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pq8-V8-h7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5611.594202898551" y="-835.04464285714278"/>
+            <point key="canvasLocation" x="5442" y="-385"/>
         </scene>
         <!--Record Location Selection Table View Controller-->
         <scene sceneID="E1E-RG-38H">
@@ -566,7 +545,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYc-Ta-5XE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6548" y="-333"/>
+            <point key="canvasLocation" x="6219" y="-1066"/>
         </scene>
         <!--Area Edit View Controller-->
         <scene sceneID="SEA-hr-BK0">
@@ -629,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DFM-jn-TY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6410" y="-2001"/>
+            <point key="canvasLocation" x="2051" y="1879"/>
         </scene>
         <!--Detail Location Table View Controller-->
         <scene sceneID="IW1-h2-IdO">
@@ -689,7 +668,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ps-N2-JJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6220" y="524"/>
+            <point key="canvasLocation" x="7541" y="-1436"/>
         </scene>
         <!--Detail Output Table View Controller-->
         <scene sceneID="i2b-wb-hJc">
@@ -754,7 +733,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKu-F4-D24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6875" y="524"/>
+            <point key="canvasLocation" x="8197" y="-1436"/>
         </scene>
         <!--Location Selection Table View Controller-->
         <scene sceneID="fcC-26-uUt">
@@ -798,7 +777,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJD-2o-sCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4479.7101449275369" y="306.69642857142856"/>
+            <point key="canvasLocation" x="5389.8550724637689" y="306.69642857142856"/>
         </scene>
         <!--Location Edition Table View Controller-->
         <scene sceneID="9Ku-bn-rzn">
@@ -810,14 +789,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item Cell" id="QjA-JY-CAh">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QjA-JY-CAh" id="f9Q-L1-cqI">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ai-fX-N8d">
-                                            <rect key="frame" x="20" y="11" width="171" height="21.5"/>
+                                            <rect key="frame" x="20" y="11" width="171" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="171" id="3J6-ys-fHJ"/>
                                             </constraints>
@@ -826,7 +805,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-Xl-Fsa">
-                                            <rect key="frame" x="223" y="11" width="171" height="21.5"/>
+                                            <rect key="frame" x="223" y="11" width="171" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -853,66 +832,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSt-bJ-vFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5304" y="690"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="O0n-xP-KPc">
-            <objects>
-                <viewController id="Apt-yP-V52" customClass="ViewController" customModule="Supplies_Helper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gsT-j9-CyU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fKZ-Rc-oPc">
-                                <rect key="frame" x="124" y="372.5" width="166" height="156"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcR-Ht-0bw">
-                                        <rect key="frame" x="0.0" y="0.0" width="166" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Clear Counter History"/>
-                                        <connections>
-                                            <action selector="clearCounterHistory:" destination="Apt-yP-V52" eventType="touchUpInside" id="Tdr-Y8-5r0"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JS-Pg-9Ee">
-                                        <rect key="frame" x="0.0" y="41" width="166" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Clear All Records"/>
-                                        <connections>
-                                            <action selector="clearRecord:" destination="Apt-yP-V52" eventType="touchUpInside" id="ngB-tC-vyv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itp-U2-iZD">
-                                        <rect key="frame" x="0.0" y="82" width="166" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Items"/>
-                                        <connections>
-                                            <segue destination="PeJ-mZ-FaI" kind="show" id="FxY-Pe-usN"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hr8-ET-Yhz">
-                                        <rect key="frame" x="0.0" y="123" width="166" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Locations"/>
-                                        <connections>
-                                            <segue destination="Q6f-ed-D2l" kind="show" id="z72-Wr-XZa"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="fKZ-Rc-oPc" firstAttribute="centerX" secondItem="aob-zc-5sj" secondAttribute="centerX" id="SQk-Ia-5ZJ"/>
-                            <constraint firstItem="fKZ-Rc-oPc" firstAttribute="centerY" secondItem="aob-zc-5sj" secondAttribute="centerY" id="eZj-Fc-4dt"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aob-zc-5sj"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="eA3-yZ-QEC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1z-DZ-oK2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4197.1014492753629" y="-1179.2410714285713"/>
+            <point key="canvasLocation" x="6220" y="307"/>
         </scene>
         <!--Item Data Table View Controller-->
         <scene sceneID="kpD-bO-vKu">
@@ -963,28 +883,52 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOP-7i-XkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6657.971014492754" y="-1302.4553571428571"/>
+            <point key="canvasLocation" x="2903" y="1108"/>
         </scene>
-        <!--Database-->
-        <scene sceneID="D60-Zc-BtG">
+        <!--Cups Calculator-->
+        <scene sceneID="mXD-9m-fKl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xxb-CS-InP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Database" image="folder" catalog="system" selectedImage="folder.fill" id="zjV-ts-Ln7"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uvy-id-dKR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Apt-yP-V52" kind="relationship" relationship="rootViewController" id="Ttg-sE-uPT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8a9-bo-Yvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="lAb-T3-x3N" customClass="RootCupCountViewController" customModule="Supplies_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tt1-da-QXj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="178" translatesAutoresizingMaskIntoConstraints="NO" id="6Vh-Af-QXe">
+                                <rect key="frame" x="103" y="316.5" width="208" height="268"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tQ-Dh-ReG">
+                                        <rect key="frame" x="4.5" y="0.0" width="199" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="🥤杯子计算器🔢"/>
+                                        <connections>
+                                            <segue destination="ALY-nx-zKG" kind="presentation" id="9hf-i5-d4q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVy-mH-7oY">
+                                        <rect key="frame" x="0.0" y="223" width="208" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="图片数杯杯(Beta)"/>
+                                        <connections>
+                                            <segue destination="Ec1-xH-Ykh" kind="show" id="IX6-pM-uJ4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Vh-Af-QXe" firstAttribute="centerX" secondItem="y5T-rj-Vhb" secondAttribute="centerX" id="A3g-FV-VzL"/>
+                            <constraint firstItem="6Vh-Af-QXe" firstAttribute="centerY" secondItem="y5T-rj-Vhb" secondAttribute="centerY" id="obA-RQ-Trm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y5T-rj-Vhb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cups Calculator" id="73L-zq-Mx5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enS-KT-ha8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3286.9565217391305" y="-1179.2410714285713"/>
+            <point key="canvasLocation" x="3572" y="-1264"/>
         </scene>
-        <!--Data Source-->
+        <!--App Data Source-->
         <scene sceneID="F0F-za-jgi">
             <objects>
                 <viewController id="KFT-OA-PrG" customClass="DevelopmentViewController" customModule="Supplies_Helper" customModuleProvider="target" sceneMemberID="viewController">
@@ -993,45 +937,88 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Uxh-9G-GMG">
-                                <rect key="frame" x="129.5" y="321" width="155" height="215"/>
+                                <rect key="frame" x="129.5" y="269" width="155" height="363"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xg-sc-8dx">
+                                        <rect key="frame" x="18.5" y="0.0" width="118" height="30"/>
+                                        <state key="normal" title="Location Manage"/>
+                                        <connections>
+                                            <segue destination="Q6f-ed-D2l" kind="show" id="y0Q-kt-oDG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-V5-KjZ">
+                                        <rect key="frame" x="29" y="37" width="97" height="30"/>
+                                        <state key="normal" title="Items Manage"/>
+                                        <connections>
+                                            <segue destination="PeJ-mZ-FaI" kind="show" id="FGE-yy-53c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-BK-CC5">
+                                        <rect key="frame" x="3" y="74" width="149" height="30"/>
+                                        <state key="normal" title="Clear Counter History">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClearCounter:" destination="KFT-OA-PrG" eventType="touchUpInside" id="cLJ-iQ-b0A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFX-80-pUz">
+                                        <rect key="frame" x="22.5" y="111" width="110" height="30"/>
+                                        <state key="normal" title="Clear All Record">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClearRecord:" destination="KFT-OA-PrG" eventType="touchUpInside" id="FUZ-QB-yze"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPi-Hf-GQQ">
-                                        <rect key="frame" x="37" y="0.0" width="81" height="30"/>
-                                        <state key="normal" title="Export Area"/>
+                                        <rect key="frame" x="37" y="148" width="81" height="30"/>
+                                        <state key="normal" title="Export Area">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnArea:" destination="KFT-OA-PrG" eventType="touchUpInside" id="TRt-2z-Out"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXw-ZH-OGk">
-                                        <rect key="frame" x="37.5" y="37" width="80" height="30"/>
-                                        <state key="normal" title="Export Item"/>
+                                        <rect key="frame" x="37.5" y="185" width="80" height="30"/>
+                                        <state key="normal" title="Export Item">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnItem:" destination="KFT-OA-PrG" eventType="touchUpInside" id="apO-LH-buf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFs-gn-FL8">
-                                        <rect key="frame" x="23.5" y="74" width="108" height="30"/>
-                                        <state key="normal" title="Export Location"/>
+                                        <rect key="frame" x="23.5" y="222" width="108" height="30"/>
+                                        <state key="normal" title="Export Location">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnLocation:" destination="KFT-OA-PrG" eventType="touchUpInside" id="3Eo-xd-CG1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzq-bf-UYi">
-                                        <rect key="frame" x="29.5" y="111" width="96" height="30"/>
-                                        <state key="normal" title="Export Report"/>
+                                        <rect key="frame" x="29.5" y="259" width="96" height="30"/>
+                                        <state key="normal" title="Export Report">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnReport:" destination="KFT-OA-PrG" eventType="touchUpInside" id="EJV-5C-e3J"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTj-mO-muw">
-                                        <rect key="frame" x="0.0" y="148" width="155" height="30"/>
-                                        <state key="normal" title="Export Counter Report"/>
+                                        <rect key="frame" x="0.0" y="296" width="155" height="30"/>
+                                        <state key="normal" title="Export Counter Report">
+                                            <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="btnCounter:" destination="KFT-OA-PrG" eventType="touchUpInside" id="e16-FJ-Op0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-Qz-oFA">
-                                        <rect key="frame" x="33.5" y="185" width="88" height="30"/>
+                                        <rect key="frame" x="31.5" y="333" width="92" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Get Data Set"/>
                                         <connections>
                                             <segue destination="f0z-LK-LBT" kind="presentation" id="HgI-W3-fuE"/>
@@ -1039,28 +1026,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Data Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nm-Xz-wsp">
-                                <rect key="frame" x="20" y="44" width="196.5" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Uxh-9G-GMG" firstAttribute="centerX" secondItem="2l2-jW-f76" secondAttribute="centerX" id="DtD-u4-4pZ"/>
-                            <constraint firstItem="1Nm-Xz-wsp" firstAttribute="leading" secondItem="2l2-jW-f76" secondAttribute="leading" constant="20" id="VQN-im-Bxk"/>
-                            <constraint firstItem="1Nm-Xz-wsp" firstAttribute="top" secondItem="2l2-jW-f76" secondAttribute="top" id="dkv-UN-cAw"/>
-                            <constraint firstItem="2l2-jW-f76" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1Nm-Xz-wsp" secondAttribute="trailing" symbolic="YES" id="mDH-17-NV1"/>
                             <constraint firstItem="Uxh-9G-GMG" firstAttribute="centerY" secondItem="2l2-jW-f76" secondAttribute="centerY" id="qOk-D7-5FR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2l2-jW-f76"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Data Source" image="archivebox" catalog="system" selectedImage="archivebox.fill" id="Utd-n7-4d5"/>
+                    <navigationItem key="navigationItem" title="App Data Source" id="OhC-be-ehN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYQ-9R-Nx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2192.753623188406" y="306.69642857142856"/>
+            <point key="canvasLocation" x="2968" y="307"/>
         </scene>
         <!--Load Data View Controller-->
         <scene sceneID="F1z-dS-X2M">
@@ -1089,7 +1067,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqX-RT-SNr">
                                         <rect key="frame" x="0.0" y="50" width="244.5" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Reset All Data"/>
                                         <connections>
                                             <action selector="allData:" destination="f0z-LK-LBT" eventType="touchUpInside" id="zX7-RV-3vJ"/>
@@ -1148,7 +1126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MpR-jI-Clt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2904" y="307"/>
+            <point key="canvasLocation" x="3813.04347826087" y="306.69642857142856"/>
         </scene>
         <!--Cup Count View Controller-->
         <scene sceneID="5cl-Sp-8Ff">
@@ -1584,7 +1562,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJl-dk-tBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="XRK-LQ-rhf"/>
             </objects>
-            <point key="canvasLocation" x="5469.5652173913049" y="-46.205357142857139"/>
+            <point key="canvasLocation" x="4612" y="-1264"/>
         </scene>
         <!--Location-->
         <scene sceneID="pvd-ap-HBr">
@@ -1603,13 +1581,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2c-ES-lkr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3704" y="384"/>
+            <point key="canvasLocation" x="4613" y="307"/>
         </scene>
-        <!--Main-->
+        <!--Supplies-->
         <scene sceneID="kR6-Og-PuJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O5w-4t-0FL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main" image="pencil" catalog="system" id="xB6-Vp-6Y7"/>
+                    <tabBarItem key="tabBarItem" title="Supplies" image="pencil" catalog="system" id="xB6-Vp-6Y7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yiQ-g6-b6B">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1624,20 +1602,58 @@
             </objects>
             <point key="canvasLocation" x="3009" y="-478"/>
         </scene>
+        <!--Cups-->
+        <scene sceneID="n0B-If-OSd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nhY-rt-FND" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cups" image="table" catalog="system" selectedImage="table.fill" id="AFc-py-usB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Le8-tk-geq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lAb-T3-x3N" kind="relationship" relationship="rootViewController" id="0wx-Jp-zNr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUy-iR-Wm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2730" y="-1264"/>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="bBs-Mt-Egv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QAo-xn-kOo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Data Source" image="archivebox" catalog="system" selectedImage="archivebox.fill" id="Utd-n7-4d5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9dz-5q-UcV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KFT-OA-PrG" kind="relationship" relationship="rootViewController" id="Wq4-L3-jZl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdF-Gs-pyG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192.753623188406" y="306.69642857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="archivebox" catalog="system" width="64" height="52"/>
         <image name="archivebox.fill" catalog="system" width="64" height="52"/>
-        <image name="folder" catalog="system" width="64" height="46"/>
-        <image name="folder.fill" catalog="system" width="64" height="46"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="table" catalog="system" width="64" height="46"/>
+        <image name="table.fill" catalog="system" width="64" height="46"/>
         <image name="tray.full" catalog="system" width="64" height="44"/>
         <image name="tray.full.fill" catalog="system" width="64" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="biN-0T-N1w"/>
+        <segue reference="HgI-W3-fuE"/>
         <segue reference="YAg-wn-CSR"/>
         <segue reference="sb3-t4-icd"/>
-        <segue reference="Poi-zu-6gY"/>
+        <segue reference="wQ8-0q-w0e"/>
     </inferredMetricsTieBreakers>
 </document>

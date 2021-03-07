@@ -55,6 +55,35 @@ class DevelopmentViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func btnClearRecord(_ sender: Any) {
+        let dao = DaoRecord()
+        dao.remove(at: nil)
+        popUpWindow(notification: "Record")
+    }
+    
+    @IBAction func btnClearCounter(_ sender: Any) {
+        let dao = DaoCupCount()
+        dao.remove(at: nil)
+        popUpWindow(notification: "数杯器")
+    }
+    
+    func popUpWindow(notification str: String) {
+        let alert = UIAlertController(title: "提示", message: "重置成功！", preferredStyle: .alert)
+        let dismissAction = UIAlertAction(title: "Dismiss", style: .default) { [weak self] _ in
+        self?.navigationController?.popViewController(animated: true)
+                }
+        
+        let originStr = "已置制\(str)数据"
+        let attrStr = NSMutableAttributedString(string: originStr)
+        let style = NSMutableParagraphStyle()
+        style.alignment = .center
+        attrStr.addAttributes([NSAttributedString.Key.paragraphStyle: style], range: NSMakeRange(0, originStr.count))
+        attrStr.addAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)], range: NSMakeRange(0, originStr.count))
+        alert.setValue(attrStr, forKey: "attributedMessage")
+
+        alert.addAction(dismissAction)
+        present(alert, animated: true, completion: nil)
+    }
 
     func popUpWindow() {
         let alert = UIAlertController(title: "提示", message: "复制成功！", preferredStyle: .alert)

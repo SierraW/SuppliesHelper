@@ -100,6 +100,14 @@ class ImgMap {
         return [r, g, b, a]
     }
     
+    func debugPrintRow(at xAxis: Int) {
+        if xAxis < width, xAxis > 0 {
+            for y in 0..<height {
+                print(preloadedData[y][xAxis])
+            }
+        }
+    }
+    
     private func isCorrectValue(for value:[Int]) -> Bool {
         var overallValue = false
         if r != nil{
@@ -164,11 +172,12 @@ class ImgMap {
     enum Position {
         case left, right, top, bottom
         static var allValues: [Position] {
-            return [.top, .right, .left]
+            return [.top]
         }
     }
     
-    // MARK: contrast section
+    
+    // MARK: contrast section mk2
     
     func getResultBasedOnContrast() -> [ImgContrast]{
         var output: [ImgContrast] = []
@@ -189,18 +198,18 @@ class ImgMap {
     }
     
     func getContrastCount(origin: (x: Int, y: Int), record: ImgContrast) -> ImgContrast{
-        if record.count > 300 {
+        if record.count > 100 {
             return record
         }
         let data = preloadedData[origin.y][origin.x].data
+        var newRecord = record
         map[origin.y][origin.x] = true
         
         let r = data[0]
         let g = data[1]
         let b = data[2]
         
-        if isInRange(for: (r,g,b), in: record) || record.count == 0 {
-            var newRecord = record
+        if newRecord.compare(with: data, filter: filter) || record.count == 0 {
             newRecord.addNewMember(r: r, g: g, b: b)
             
             for position in Position.allValues {
@@ -212,8 +221,70 @@ class ImgMap {
             }
             return newRecord
         }
-        return record
+        return newRecord
     }
+    
+    func processResult(for result: [ImgContrast]) -> Int {
+        var counter = 0
+        for element in result {
+            if element.g > 150, element.count > 10 {
+                if element.count == 101 {
+                    break
+                } else {
+                    counter += 1
+                }
+            }
+        }
+        return counter / 2
+    }
+    
+    // MARK: contrast section
+    
+//    func getResultBasedOnContrast() -> [ImgContrast]{
+//        var output: [ImgContrast] = []
+//
+//        for y in 0..<height {
+//            let x = 2
+//
+//            if !map[y][x] {
+//                let record = ImgContrast(y: y)
+//                let count = getContrastCount(origin: (x, y), record: record)
+//                print(count)
+//                output.append(count)
+//            }
+//
+//        }
+//
+//        refreshMap()
+//        return output
+//    }
+//
+//    func getContrastCount(origin: (x: Int, y: Int), record: ImgContrast) -> ImgContrast{
+//        if record.count > 300 {
+//            return record
+//        }
+//        let data = preloadedData[origin.y][origin.x].data
+//        map[origin.y][origin.x] = true
+//
+//        let r = data[0]
+//        let g = data[1]
+//        let b = data[2]
+//
+//        if isInRange(for: (r,g,b), in: record) || record.count == 0 {
+//            var newRecord = record
+//            newRecord.addNewMember(r: r, g: g, b: b)
+//
+//            for position in Position.allValues {
+//                if let (x, y) = getNeigbor(x: origin.x, y: origin.y, from: position) {
+//                    if map[y][x] == false {
+//                        newRecord = getContrastCount(origin: (x, y), record: newRecord)
+//                    }
+//                }
+//            }
+//            return newRecord
+//        }
+//        return record
+//    }
         
     func isInRange(for color: (r: Int, g: Int, b: Int), in record: ImgContrast) -> Bool {
         if color.r.compare(to: record.r) < filter, color.b.compare(to: record.b) < filter, color.g.compare(to: record.g) < filter {
@@ -270,15 +341,5 @@ class ImgMap {
             }
         }
         return finalCount
-    }
-}
-
-extension Int {
-    func compare(to x: Int) -> Int {
-        if self > x {
-            return self - x
-        } else {
-            return x - self
-        }
     }
 }

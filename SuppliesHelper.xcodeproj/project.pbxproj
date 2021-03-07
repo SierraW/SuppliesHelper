@@ -20,13 +20,13 @@
 		3B855B3723FC2D040053F712 /* ImgPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3623FC2D040053F712 /* ImgPoint.swift */; };
 		3B855B3B23FCE36D0053F712 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3A23FCE36D0053F712 /* NotificationView.swift */; };
 		3B855B3F23FD89E00053F712 /* ImgContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B3E23FD89E00053F712 /* ImgContrast.swift */; };
+		3B855B4123FE48B60053F712 /* RootCupCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B855B4023FE48B60053F712 /* RootCupCountViewController.swift */; };
 		3BA099C623EAE2E7000B3CF7 /* DaoShuyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */; };
 		3BA099C823EB0DD5000B3CF7 /* DataEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */; };
 		3BA09A4723FA6DFD000B3CF7 /* CountCups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */; };
 		3BA09A4B23FA6FC6000B3CF7 /* CameraCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA09A4A23FA6FC6000B3CF7 /* CameraCountViewController.swift */; };
 		3BF6102223DF163300572621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102123DF163300572621 /* AppDelegate.swift */; };
 		3BF6102423DF163300572621 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102323DF163300572621 /* SceneDelegate.swift */; };
-		3BF6102623DF163300572621 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102523DF163300572621 /* ViewController.swift */; };
 		3BF6102923DF163300572621 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6102723DF163300572621 /* Main.storyboard */; };
 		3BF6102C23DF163300572621 /* SuppliesHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6102A23DF163300572621 /* SuppliesHelper.xcdatamodeld */; };
 		3BF6102E23DF163400572621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6102D23DF163400572621 /* Assets.xcassets */; };
@@ -69,6 +69,7 @@
 		3B855B3623FC2D040053F712 /* ImgPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgPoint.swift; sourceTree = "<group>"; };
 		3B855B3A23FCE36D0053F712 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		3B855B3E23FD89E00053F712 /* ImgContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgContrast.swift; sourceTree = "<group>"; };
+		3B855B4023FE48B60053F712 /* RootCupCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCupCountViewController.swift; sourceTree = "<group>"; };
 		3BA099C523EAE2E7000B3CF7 /* DaoShuyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoShuyiApp.swift; sourceTree = "<group>"; };
 		3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoder.swift; sourceTree = "<group>"; };
 		3BA09A4623FA6DFD000B3CF7 /* CountCups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountCups.storyboard; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		3BF6101E23DF163300572621 /* Supplies Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Supplies Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF6102123DF163300572621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF6102323DF163300572621 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BF6102523DF163300572621 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BF6102823DF163300572621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF6102B23DF163300572621 /* SuppliesHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuppliesHelper.xcdatamodel; sourceTree = "<group>"; };
 		3BF6102D23DF163400572621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 		3BA09A4823FA6EA4000B3CF7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3BF6102523DF163300572621 /* ViewController.swift */,
 				3BF6104723E02FEB00572621 /* EditItemViewController.swift */,
 				3BF6104F23E1607800572621 /* EditItemPickerView.swift */,
 			);
@@ -248,6 +247,7 @@
 				3B7E310423E8306200738A62 /* LoadDataViewController.swift */,
 				3B7E310E23EA5FAE00738A62 /* CupCountViewController.swift */,
 				3BA099C723EB0DD5000B3CF7 /* DataEncoder.swift */,
+				3B855B4023FE48B60053F712 /* RootCupCountViewController.swift */,
 			);
 			path = Development;
 			sourceTree = "<group>";
@@ -355,6 +355,7 @@
 				3B7E30FF23E7CA7F00738A62 /* DetailModifyViewController.swift in Sources */,
 				3BF6105A23E59DF300572621 /* LocationSelectionSet.swift in Sources */,
 				3BF6106923E6A3BE00572621 /* DaoRecord.swift in Sources */,
+				3B855B4123FE48B60053F712 /* RootCupCountViewController.swift in Sources */,
 				3BF6102C23DF163300572621 /* SuppliesHelper.xcdatamodeld in Sources */,
 				3BF6104823E02FEB00572621 /* EditItemViewController.swift in Sources */,
 				3BF6107823E71BF100572621 /* DetailFinderTableViewController.swift in Sources */,
@@ -379,7 +380,6 @@
 				3BF6104E23E043BD00572621 /* DaoArea.swift in Sources */,
 				3B7E310F23EA5FAE00738A62 /* CupCountViewController.swift in Sources */,
 				3BF6104A23E0324800572621 /* DaoItem.swift in Sources */,
-				3BF6102623DF163300572621 /* ViewController.swift in Sources */,
 				3BF6102223DF163300572621 /* AppDelegate.swift in Sources */,
 				3B855B3723FC2D040053F712 /* ImgPoint.swift in Sources */,
 				3B7E311A23EAA6E100738A62 /* ShuyiCupHistory+CoreDataClass.swift in Sources */,
@@ -533,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2041;
+				CURRENT_PROJECT_VERSION = 2045;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,7 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2041;
+				CURRENT_PROJECT_VERSION = 2045;
 				DEVELOPMENT_TEAM = 7Y2V53HBZ8;
 				INFOPLIST_FILE = SuppliesHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

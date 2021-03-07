@@ -16,6 +16,54 @@ class CountDetailViewController: UIViewController {
     
     @IBOutlet weak var txtTitle: UILabel!
     
+    @IBOutlet weak var btnToCal0: UIButton!
+    @IBOutlet weak var btnToCal1: UIButton!
+    @IBAction func actToCal0(_ sender: Any) {
+        if outputData.count == 1{
+            switch mode {
+            case .normal:
+                outputData.append(4)
+            case .contrast:
+                outputData.append(0)
+            default:
+                break
+            }
+        } else {
+            switch mode {
+            case .normal:
+                outputData[1] = 4
+            case .contrast:
+                outputData[1] = 0
+            default:
+                break
+            }
+        }
+
+        performSegue(withIdentifier: "Camera Count Output", sender: nil)
+    }
+    @IBAction func actToCal1(_ sender: Any) {
+        if outputData.count == 1 {
+            switch mode {
+            case .normal:
+                outputData.append(6)
+            case .contrast:
+                outputData.append(2)
+            default:
+                break
+            }
+        } else {
+            switch mode {
+            case .normal:
+                outputData[1] = 6
+            case .contrast:
+                outputData[1] = 2
+            default:
+                break
+            }
+        }
+
+        performSegue(withIdentifier: "Camera Count Output", sender: nil)
+    }
     var img: UIImage!
     var controller: ImgMap!
     var mode: CountMode!
@@ -29,27 +77,36 @@ class CountDetailViewController: UIViewController {
         super.viewDidLoad()
         controller = ImgMap(image: img)
         imgInput.image = img
+        //controller.debugPrintRow(at: 2)
         
         if mode == .normal {
             txtTitle.text = "结果（纸杯）"
-            outputData.append(4)
+            btnToCal0.setTitle("输出\"大纸杯\"结果到计算器", for: .normal)
+            btnToCal1.setTitle("输出\"中纸杯\"结果到计算器", for: .normal)
             txtOutput.text = displayResult(output: getResult())
         } else if mode == .contrast {
             txtTitle.text = "结果（塑料杯）"
-            outputData.append(0)
-            txtOutput.text = displayResult(output: getResultContrastMode())
+            btnToCal0.setTitle("输出\"大塑杯\"结果到计算器", for: .normal)
+            btnToCal1.setTitle("输出\"中塑杯\"结果到计算器", for: .normal)
+            //txtOutput.text = displayResult(output: getResultContrastMode())
+             controller.filter = 3
+            let result = controller.getResultBasedOnContrast()
+            for element in result {
+                print("g:\(element.g) count:\(element.count) y:\(element.y)")
+            }
+            txtOutput.text = "一共有\(controller.processResult(for: result ))个杯子"
         }
     }
     
     func getResultContrastMode() -> [Int: Int] {
         var outputMap: [Int: Int] = [:]
-        for filter in 16...19 {
-            controller.filter = filter
+        //for filter in 1...10 {
+            controller.filter = 3
             let result = controller.getResultBasedOnContrast()
             let filteredOutput = controller.filterOutput(record: result, filter: (100,100,100))
             let count = controller.processContrastComparingResult(filteredOutput: filteredOutput)
             outputMap[count] = (outputMap[count] ?? 0) + 1
-        }
+        //}
         return outputMap
     }
     
@@ -78,6 +135,11 @@ class CountDetailViewController: UIViewController {
                     }
                     previous = point
                 }
+                
+                if output.count == 0 {
+                    return [0:0]
+                }
+                
                 let med = output.sorted()[output.count / 2]
                 
                 var final: [Int] = []

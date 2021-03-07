@@ -54,9 +54,9 @@ class CupCountViewController: UIViewController, UITextFieldDelegate {
         reloadData()
         
         if dataInputed != nil, dataInputed?.count == 2 {
-            let index = dataInputed![0] + 1
+            let index = dataInputed![1] + 1
             if let txtInput = stackNight.arrangedSubviews[index] as? UITextField {
-                txtInput.text = "\(dataInputed![1])"
+                txtInput.text = "\(dataInputed![0])"
                 calculateSubtotal()
             }
         }
